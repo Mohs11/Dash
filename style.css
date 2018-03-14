@@ -1,0 +1,536 @@
+html {
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background: #333;
+	color: white;
+}
+
+.unlink .unlink:hover .unlink:after{
+	text-decoration: inherit;
+	color: inherit;
+}
+.navcon {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	
+	width: 100%;
+}
+
+nav{ 
+	background: #222;
+	width: 100%;
+	height: 35px;
+}
+
+nav ul {
+	list-style: none;
+	padding-left: 0;
+	padding-top: 5px;
+}
+
+nav ul li {
+	display: inline-block;
+	font-size: 14pt;
+	font-weight: 300px;
+	font-weight: 600;
+	padding-left: 10px;
+}
+
+nav ul li span {
+	font-weight: 100;
+}
+
+.light {
+	color: #444;
+	font-weight: 600;	
+	float: right;
+	padding-right: 15px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.light:hover {
+	color: #888;
+}
+
+
+
+.navpanel {
+	background: #333;	
+	transition: 0.5s;
+	border: 1px solid #333;	
+	text-align: center;
+	border-radius: 15pt;
+}
+
+.logo {
+	float:left;
+	height: 100px;
+	width: auto;	
+}
+
+.button {
+	background: rgba(226,9,128,0.40);
+	width: 250px;
+	padding: 2px 2px 2px 2px;
+	border-radius: 15px;
+	border: 2px solid black;	
+	cursor: pointer;
+	margin: 5px 5px 5px 5px;
+	transition: 0.5s;
+}
+
+.floatright {
+	float: right;
+	margin-top: 20px;
+}
+
+.button:hover {
+ border-color: white;
+}
+
+.button h1 {
+	font-weight: 400;	
+	font-size: 16pt;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+}
+.button p {
+	font-size: 11pt;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.container {
+	min-width: 98%;
+}
+
+.chart h3 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 24pt;
+	border-bottom: 1px solid rgb(51,51,51);
+}
+
+.chart h4 {
+	text-align: center;
+	color: lightgrey;
+	font-weight: 300;
+	font-size: 18pt;
+}
+
+.chart {
+	background: #222;
+	border: 5px solid #333;
+	border-radius: 15px;
+	min-height: 350px;
+}
+
+.stat {
+	background: #222;
+	border-radius: 15px;
+	border: 5px solid #333;
+	min-height: 320px;
+}
+.stat h2 {
+	text-align: center;
+	font-size: 24pt;	
+	border-bottom: 1px solid rgb(51,51,51);
+	margin-bottom: 5%;
+}
+
+.stat p {
+	text-align: center;
+	color: white;								
+	margin-top: 75px;
+}
+
+.stats p {
+	text-align: center;							
+	margin-top: 25px;
+	font-size: 22pt;	
+}
+
+.number {
+	color: rgb(228,9,126);
+	font-size: 58pt;	
+	font-weight: 300;
+	background: none;
+	padding: 0 20px 10px 20px;
+	border-radius: 50px;	
+}
+
+.numbers {
+	color: rgb(228,9,126);
+	font-size: 58pt;	
+	font-weight: 300;
+	background: none;
+	padding: 0 20px 10px 20px;
+	border-radius: 50px;	
+}
+
+.nope{
+	color: red;
+}
+
+.yay {
+	color: green !important;
+}
+
+/* Model */
+.overlay {
+	display: none;
+}
+
+.box {
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 15px 15px 15px 15px;
+	border-radius: 15px;
+	background: #222;	
+}
+
+.box h1 {
+	text-align: left;
+	font-size: 34pt;
+	font-weight: 100;
+	border-bottom: 1px solid rgb(228,9,126);
+}
+
+.box p {
+	margin-right: 15px;
+	font-size: 16pt;
+}
+
+table {
+	margin-top: 5px;
+	background: rgb(48,48,48);
+	background: rgba(22,22,22,0.55);  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, rgba(226,9,128,0.40), rgba(22,22,22,0.55));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, rgba(226,9,128,0.40), rgba(22,22,22,0.55)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 15px;
+	border-color: transparent;
+
+}
+
+table {
+  border-collapse: collapse;
+  border-bottom: transparent;
+}
+
+table td {
+  border: 0 solid grey;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0 !important;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0 !important;
+}
+
+th {
+	font-size: 18pt;
+	font-weight: 300;
+	background: rgba(44, 62, 80,0);	
+}
+
+td {
+	font-size: 14pt;
+	font-weight: 400;
+}
+
+a {
+  padding: 5px 2px 2px 2px;
+  margin: 0 1px 0 0;
+  margin-top: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+  transition-property: border-bottom .6s linear 0s;
+  -moz-transition: border-bottom .6s linear 0s;
+  -webkit-transition: border-bottom .6s linear 0s;
+  -o-transition: border-bottom .6s linear 0s;
+  font-size: 25px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(226,9,128);
+}
+
+a.down {
+    background: transparent;
+    color:rgba(46, 204, 113,1.0); 
+    text-shadow: 2px 2px 10px black; 
+}
+
+.middle {
+	text-align: center;
+}
+
+.commentdiv {
+	display: none;
+}
+.comment {
+	color: white;
+	margin-top: 5px;
+	height: 100px;
+	border: rgb(226,9,126);
+	background-color: #333;
+	font-size: 11pt;
+	width: 100%;
+	text-indent: 4px;
+}
+
+::placeholder {
+	color: lightgrey;
+	font-size: 11pt;
+	padding-left: 4px;
+}
+
+.icomment {
+	cursor: pointer;
+	transition: 0.5s;
+	font-size: 16pt !important;
+	padding-top: 5px;
+}
+.icomment:hover {
+	color: rgb(228,9,126);
+}
+
+.submit {
+	color: white;
+	background: #222;
+	border: 3px solid #333;
+	transition: 1s;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.submit:hover {
+	border-color: white;
+}
+
+.submit:focus {
+	outline:0;
+}
+
+textarea:focus {
+	outline-color: white;
+}
+
+
+/*Animate*/
+.animated{
+    
+-webkit-animation-fill-mode:backwards;
+-moz-animation-fill-mode:backwards;
+-ms-animation-fill-mode:backwards;
+-o-animation-fill-mode:backwards;
+animation-fill-mode:backwards;
+-webkit-animation-duration:2s;
+-moz-animation-duration:2s;
+-ms-animation-duration:2s;
+-o-animation-duration:2s;
+animation-duration:2s;
+}
+
+.animated2{
+    
+-webkit-animation-fill-mode:backwards;
+-moz-animation-fill-mode:backwards;
+-ms-animation-fill-mode:backwards;
+-o-animation-fill-mode:backwards;
+animation-fill-mode:backwards;
+-webkit-animation-duration:2s;
+-moz-animation-duration:2s;
+-ms-animation-duration:2s;
+-o-animation-duration:2s;
+animation-duration:2s;
+-webkit-animation-delay:1s;
+-moz-animation-delay:1s;
+-ms-animation-delay:1s;
+-o-animation-delay:1s;
+animation-delay:0.8s;   
+}
+
+.animated3{
+    
+-webkit-animation-fill-mode:backwards;
+-moz-animation-fill-mode:backwards;
+-ms-animation-fill-mode:backwards;
+-o-animation-fill-mode:backwards;
+animation-fill-mode:backwards;
+-webkit-animation-duration:2s;
+-moz-animation-duration:2s;
+-ms-animation-duration:2s;
+-o-animation-duration:2s;
+animation-duration:2s;
+-webkit-animation-delay:1s;
+-moz-animation-delay:1s;
+-ms-animation-delay:1s;
+-o-animation-delay:1s;
+animation-delay:1s;   
+}
+
+@-webkit-keyframes fadeup {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+}
+
+@-moz-keyframes fadeup {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+}
+
+@-o-keyframes fadeup {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+}
+
+@keyframes fadeup {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+.fadeup {
+	-webkit-animation-name: fadeup;
+	-moz-animation-name: fadeup;
+	-o-animation-name: fadeup;
+	animation-name: fadeup;
+}
+
+
+.ios div {
+	animation: fadeup 1s linear;
+  	animation-fill-mode: both;
+}
+
+.ios div:nth-child(1) { animation-delay: 0.1s}
+.ios div:nth-child(2) { animation-delay: 0.2s}
+.ios div:nth-child(3) { animation-delay: 0.3s}
+.ios div:nth-child(4) { animation-delay: 0.4s}
+.ios div:nth-child(5) { animation-delay: 0.5s}
+.ios div:nth-child(6) { animation-delay: 0.6s}
+.ios div:nth-child(7) { animation-delay: 0.7s}
+.ios div:nth-child(8) { animation-delay: 0.8s}
+.ios div:nth-child(9) { animation-delay: 0.9s}
+.ios div:nth-child(10) { animation-delay: 0.10s}
+.ios div:nth-child(11) { animation-delay: 0.11s}
+.ios div:nth-child(12) { animation-delay: 0.12s}
+.ios div:nth-child(13) { animation-delay: 0.13s}
+.ios div:nth-child(14) { animation-delay: 0.14s}
+.ios div:nth-child(15) { animation-delay: 0.15s}
+.ios div:nth-child(16) { animation-delay: 0.16s}
+.ios div:nth-child(17) { animation-delay: 0.17s}
+.ios div:nth-child(18) { animation-delay: 0.18s}
+.ios div:nth-child(19) { animation-delay: 0.19s}
+.ios div:nth-child(20) { animation-delay: 0.20s}
+.ios div:nth-child(21) { animation-delay: 0.21s}
+
+.iocard {
+	background: rgb(48,48,48);
+	background: rgba(22,22,22,0.55);  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, rgba(226,9,128,0.40), rgba(22,22,22,0.55));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, rgba(226,9,128,0.40), rgba(22,22,22,0.55)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+.iocard h1 {
+	font-size: 16pt;
+	margin-top: 2px;
+	padding-top: 10px;
+	font-weight: 400;
+}
+
+.topiorow {
+	background: rgba(41,41,41,0.80);
+	border-radius: 15px;
+}
+
+.textholder p {
+	font-size: 11pt;
+	font-weight: 200;
+}
+
+.iconholder{
+	padding-top: 5px;
+}
+.iocard span {
+	font-weight: 300;
+	font-size: 10pt;
+	margin-top: 10px;
+}
+
+.helptext {
+	font-size: 10pt;
+	margin-top: 10px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	display: none;
+
+}
+
+.chartfivecol {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.putcomments {
+	background: rgba(0,0,0,0.50);
+	color: white;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 2px;
+	font-weight: 300;
+
+}
+
+kate woods
